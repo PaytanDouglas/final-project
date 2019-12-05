@@ -6,21 +6,22 @@
   --darkbluegreen: #364D59;
   --darkgreen: #00B38F;
   --darkgray: #888;
+  --darkviolet: #B250BF;
   --lightgray: #CED4DA;
+  --lightviolet: #E2BFFF;
   --murkyblue: rgba(136, 183, 213, 0);
   --murkygray: #b8b8b8;
   --puregreen: #00FFCC;
   --softred: #DC3545;
-  --transparentblack: rgba(0, 0, 0, 0.5);
   --feintblack: rgba(0, 0, 0, 0.1);
-  --transparentteal: rgba(0, 255, 204, 0.35);
   --feintteal: rgba(0, 255, 204, 0.2);
-  --transparentwhite: rgba(255, 255, 255, 0.5);
   --feintwhite: rgba(255, 255, 255, 0.3);
-  --white: #FFF;
-  --lightviolet: #E2BFFF;
-  --darkviolet: #B250BF;
+  --transparentblack: rgba(0, 0, 0, 0.5);
+  --transparentdarkgreen: rgba(63, 108, 112, 0.5);
+  --transparentteal: rgba(0, 255, 204, 0.35);
+  --transparentwhite: rgba(255, 255, 255, 0.5);
   --violet: #CC79FF;
+  --white: #FFF;
 }
 html {overflow-x: hidden;}
 body {
@@ -86,7 +87,7 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {color: var(--black); font-family: "
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 0;
   width: 100%;
-  background: var(--transparentteal);
+  background: var(--transparentdarkgreen);
 }
 .bg-image > .container {
   position: relative;
