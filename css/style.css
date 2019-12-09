@@ -16,6 +16,7 @@
   --feintblack: rgba(0, 0, 0, 0.1);
   --feintteal: rgba(0, 255, 204, 0.2);
   --feintwhite: rgba(255, 255, 255, 0.3);
+  --teal: rgba(0, 255, 204, 1);
   --transparentblack: rgba(0, 0, 0, 0.5);
   --transparentdarkgreen: rgba(63, 108, 112, 0.5);
   --transparentteal: rgba(0, 255, 204, 0.35);
@@ -454,28 +455,30 @@ div span a.site-menu-toggle span.icon-menu:hover {color:var(--violet);}
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold; }
-
-.listing-item {
-  position: relative;
-  overflow: hidden; }
-  .listing-item:after {
-    position: absolute;
-    content: "";
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    z-index: 1;
-    background: var(--black);
-    background: -moz-linear-gradient(top, var(--black) 0%, rgba(255, 255, 255, 0.31) 47%, var(--transparentwhite) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, var(--white)), color-stop(47%, rgba(255, 255, 255, 0.31)), color-stop(100%, rgba(0, 0, 0, 0.65)));
-    background: -webkit-linear-gradient(top, var(--white) 0%, rgba(255, 255, 255, 0.31) 47%, rgba(0, 0, 0, 0.65) 100%);
-    background: -o-linear-gradient(top, var(--white) 0%, rgba(255, 255, 255, 0.31) 47%, rgba(0, 0, 0, 0.65) 100%);
-    background: -ms-linear-gradient(top, var(--white) 0%, rgba(255, 255, 255, 0.31) 47%, rgba(0, 0, 0, 0.65) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, from(var(--white)), color-stop(47%, rgba(255, 255, 255, 0.31)), to(rgba(0, 0, 0, 0.65)));
-    background: linear-gradient(to bottom, var(--white) 0%, rgba(255, 255, 255, 0.31) 47%, rgba(0, 0, 0, 0.65) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--white)', endColorstr='var(--black)', GradientType=0 ); }
-  .listing-item img {
+.featured {
+  background-color: var(--transparentteal) !important;
+  padding: 1em;
+}
+.listing-item {position: relative; overflow: hidden;}
+.listing-item:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 1;
+  background: var(--black);
+  background: -moz-linear-gradient(top, var(--black) 0%, rgba(255, 255, 255, 0.31) 47%, var(--transparentwhite) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, var(--white)), color-stop(47%, rgba(255, 255, 255, 0.31)), color-stop(100%, rgba(0, 0, 0, 0.65)));
+  background: -webkit-linear-gradient(top, var(--white) 0%, rgba(255, 255, 255, 0.31) 47%, rgba(0, 0, 0, 0.65) 100%);
+  background: -o-linear-gradient(top, var(--white) 0%, rgba(255, 255, 255, 0.31) 47%, rgba(0, 0, 0, 0.65) 100%);
+  background: -ms-linear-gradient(top, var(--white) 0%, rgba(255, 255, 255, 0.31) 47%, rgba(0, 0, 0, 0.65) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--white)), color-stop(47%, rgba(255, 255, 255, 0.31)), to(rgba(0, 0, 0, 0.65)));
+  background: linear-gradient(to bottom, var(--white) 0%, rgba(255, 255, 255, 0.31) 47%, rgba(0, 0, 0, 0.65) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--white)', endColorstr='var(--black)', GradientType=0 );
+}
+.listing-item img {
     -o-object-fit: cover;
     object-fit: cover;
     height: 100%;
