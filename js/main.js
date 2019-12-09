@@ -1,4 +1,17 @@
- AOS.init({
+//Modal
+$(".button").on("click", function() {
+  var modal = $(this).data("modal");
+  $(modal).show();
+});
+$(".modal").on("click", function(e) {
+  var className = e.target.className;
+  if(className === "modal" || className === "close"){
+    $(this).closest(".modal").hide();
+  }
+});
+
+//The rest
+AOS.init({
  	duration: 800,
  	easing: 'slide',
  	once: false

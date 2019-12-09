@@ -10,7 +10,6 @@
   --lightgray: #CED4DA;
   --lightviolet: #E2BFFF;
   --murkyblue: rgba(136, 183, 213, 0);
-  --murkygray: #b8b8b8;
   --puregreen: #00FFCC;
   --softred: #DC3545;
   --feintblack: rgba(0, 0, 0, 0.1);
@@ -516,6 +515,121 @@ div span a.site-menu-toggle span.icon-menu:hover {color:var(--violet);}
       font-size: 18px;
     }
 .listing-item .listing-item-content h2 a {color: var(--white);}
+
+
+
+
+
+
+/* Grid */
+.grid-container {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+/* Grid for Small Screens */
+@media screen and (min-width: 550px) {.grid-container {grid-template-columns: repeat(2, 1fr);}}
+@media screen and (min-width: 768px) {.grid-container {grid-template-columns: repeat(3, 1fr);}}
+@media screen and (min-width: 990px) {.grid-container {grid-template-columns: repeat(4, 1fr);}}
+@media screen and (min-width: 1280px) {.grid-container {grid-template-columns: repeat(4, 1fr);}}
+/* Cards */
+.card {
+  background-color: var(--lightviolet);
+  border-radius: 4px;
+  padding: .5em;
+  transition: all .3s ease-in-out;
+}
+.thumb {
+  background-position: center center;
+  background-size: cover;
+  border-radius: 4px;
+  padding-bottom: 96%;
+}
+.one .thumb {background-image: url("../img/cupcakes/7;5/berries.jpg");}
+.two .thumb {background-image: url("../img/cupcakes/7;5/candy-gush.jpg");}
+.three .thumb {background-image: url("../img/cupcakes/7;5/candy-corn.jpg");}
+.four .thumb {background-image: url("../img/cupcakes/7;5/choc-strawberry.jpg");}
+.five .thumb {background-image: url("../img/cupcakes/7;5/funfetti.jpg");}
+.six .thumb {background-image: url("../img/cupcakes/7;5/fruity-pebbles.jpg");}
+.seven .thumb {background-image: url("../img/cupcakes/7;5/cookies-cream.jpg");}
+.eight .thumb {background-image: url("../img/cupcakes/7;5/5-sprinkle.jpg");}
+.nine .thumb {background-image: url("../img/cupcakes/7;5/mermaid.jpg");}
+.ten .thumb {background-image: url("../img/cupcakes/7;5/pumpkin-carmel-drizzle.jpg");}
+.eleven .thumb {background-image: url("../img/cupcakes/7;5/rainbow.jpg");}
+.twelve .thumb {background-image: url("../img/cupcakes/3-choc-sundae.jpg");}
+.card-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 .5em .7em;
+}
+button {transition: all .3s ease-in;}
+button.card-more {
+  background: var(--almostblack);
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: .7em;
+  font-weight: bold;
+  padding: .45em .7em;
+  text-decoration: none;
+}
+button.card-more, button.card-more:visited {
+  border: none;
+}
+button.card-more:hover {transform: scale(1.05);}
+.card:hover {
+  border: 3px solid var(--almostblack);
+  transform: scale(1.03);
+}
+/* Modal */
+.modal {
+  background-color: var(--transparentblack);
+  display: none;
+  left: 0;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1100;
+}
+.modal-content {
+  background-color: var(--lightviolet);
+  color: var(--almostblack);
+  margin: 1rem auto;
+  padding: 1em;
+  width: 75%;
+}
+.close {
+  background-color: var(--softred);
+  color: var(--almostblack);
+  font-size: 2em;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  right: 1em;
+}
+.close:hover, .close:focus {
+  background-color: var(--almostblack);
+  color: var(--teal);
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+}
+.modal-body img {width: 100%; height: auto;}
+@media screen and (min-width: 1280px) {.modal-body {grid-template-columns: 7fr 5fr;}}
+
+
+
+
+
+
 .person-29191 h2 {font-size: 18px;}
 .person-29191 .caption {
   font-size: 14px;
