@@ -547,18 +547,6 @@ div span a.site-menu-toggle span.icon-menu:hover {color:var(--violet);}
   border-radius: 4px;
   padding-bottom: 96%;
 }
-.one .thumb {background-image: url("../img/cupcakes/7;5/berries.jpg");}
-.two .thumb {background-image: url("../img/cupcakes/7;5/candy-gush.jpg");}
-.three .thumb {background-image: url("../img/cupcakes/7;5/candy-corn.jpg");}
-.four .thumb {background-image: url("../img/cupcakes/7;5/choc-strawberry.jpg");}
-.five .thumb {background-image: url("../img/cupcakes/7;5/funfetti.jpg");}
-.six .thumb {background-image: url("../img/cupcakes/7;5/fruity-pebbles.jpg");}
-.seven .thumb {background-image: url("../img/cupcakes/7;5/cookies-cream.jpg");}
-.eight .thumb {background-image: url("../img/cupcakes/7;5/5-sprinkle.jpg");}
-.nine .thumb {background-image: url("../img/cupcakes/7;5/mermaid.jpg");}
-.ten .thumb {background-image: url("../img/cupcakes/7;5/pumpkin-carmel-drizzle.jpg");}
-.eleven .thumb {background-image: url("../img/cupcakes/7;5/rainbow.jpg");}
-.twelve .thumb {background-image: url("../img/cupcakes/3-choc-sundae.jpg");}
 .card-content {
   align-items: center;
   display: flex;
@@ -625,11 +613,6 @@ button.card-more:hover {transform: scale(1.05);}
 .modal-body img {width: 100%; height: auto;}
 @media screen and (min-width: 1280px) {.modal-body {grid-template-columns: 7fr 5fr;}}
 
-
-
-
-
-
 .person-29191 h2 {font-size: 18px;}
 .person-29191 .caption {
   font-size: 14px;
@@ -640,6 +623,9 @@ button.card-more:hover {transform: scale(1.05);}
 .owl-carousel {border: 5px var(--violet) solid; background-color: var(--lightviolet);}
 div.row div.col-md-6.left {border-right: 5px var(--violet) solid;}
 .site-footer {background-color: var(--transparentteal) !important;}
+
+.banners {padding-top: 100px;}
+.hashtag {font-weight: bold; font-style: italic; font-size: 2em;}
 
 @media (min-width: 768px) {.site-section {padding: 5em 0;}}
 @media (min-width: 768px) {.site-footer {padding: 8em 0; }}
