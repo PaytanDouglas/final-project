@@ -625,6 +625,8 @@ div.row div.col-md-6.left {border-right: 5px var(--violet) solid;}
 .site-footer {background-color: var(--transparentteal) !important;}
 
 .banners {padding-top: 100px;}
+.contactus {transition: all .3s ease-in-out;}
+.contact-banners:hover {transform: scale(1.05);}
 .hashtag {font-weight: bold; font-style: italic; font-size: 2em;}
 
 /*--- Media Screens ---*/
