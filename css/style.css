@@ -626,8 +626,25 @@ div.row div.col-md-6.left {border-right: 5px var(--violet) solid;}
 
 .banners {padding-top: 100px;}
 .contactus {transition: all .3s ease-in-out;}
-.contact-banners:hover {transform: scale(1.05);}
 .hashtag {font-weight: bold; font-style: italic; font-size: 2em;}
+.contact-banners {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.contact-banners:hover {
+  border: solid 5px var(--almostblack);
+  -webkit-transform: scale(.95);
+  -ms-transform: scale(.95);
+  transform: scale(.95);
+}
 
 /*--- Media Screens ---*/
 @media (min-width: 768px) {
